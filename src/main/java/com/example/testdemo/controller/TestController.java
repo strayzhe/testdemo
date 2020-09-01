@@ -14,7 +14,7 @@ public class TestController {
         return "success";
     }
 
-    //获取
+    //获取参数
     @GetMapping("get")
     public String test2(){
         return "success get";
