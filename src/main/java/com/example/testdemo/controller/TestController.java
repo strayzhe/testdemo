@@ -1,5 +1,6 @@
 package com.example.testdemo.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +12,11 @@ public class TestController {
     @PostMapping("diot")
     public String test(){
         return "success";
+    }
+
+    @GetMapping("get")
+    public String test2(){
+        return "success get";
     }
 
 }
